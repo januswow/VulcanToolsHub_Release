@@ -37,6 +37,10 @@ function getRequiredToken() {
   return token;
 }
 
+function getPublicReleaseToken(sourceToken) {
+  return process.env.RELEASE_ASSETS_TOKEN || sourceToken;
+}
+
 function uploadUrlForRelease(release, assetName) {
   const baseUrl = String(release.upload_url || '').replace(/\{.*$/, '');
   if (!baseUrl) {
@@ -207,7 +211,11 @@ async function writeReleasePayloads(releases) {
   await writeFile(resolve(publicDir, 'tools.json'), `${JSON.stringify({ generatedAt, tools: publicTools }, null, 2)}\n`);
 }
 
-export async function syncReleaseAssets({ token = getRequiredToken(), fetchImpl = fetch } = {}) {
+export async function syncReleaseAssets({
+  token = getRequiredToken(),
+  publicToken = getPublicReleaseToken(token),
+  fetchImpl = fetch,
+} = {}) {
   const releases = {};
   const assetsToMirror = [];
 
@@ -225,11 +233,11 @@ export async function syncReleaseAssets({ token = getRequiredToken(), fetchImpl 
     });
   }
 
-  const publicRelease = await ensurePublicRelease({ token, fetchImpl });
-  await deletePublicReleaseAssets({ release: publicRelease, token, fetchImpl });
+  const publicRelease = await ensurePublicRelease({ token: publicToken, fetchImpl });
+  await deletePublicReleaseAssets({ release: publicRelease, token: publicToken, fetchImpl });
 
   for (const { asset, bytes } of verifiedAssets) {
-    await uploadPublicReleaseAsset({ release: publicRelease, asset, bytes, token, fetchImpl });
+    await uploadPublicReleaseAsset({ release: publicRelease, asset, bytes, token: publicToken, fetchImpl });
   }
 
   await writeReleasePayloads(releases);

@@ -3,6 +3,9 @@ name: Sync release assets and deploy
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   sync-and-deploy:
     runs-on: ubuntu-latest
@@ -10,6 +13,7 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.RELEASE_SYNC_TOKEN }}
       RELEASE_SYNC_TOKEN: ${{ secrets.RELEASE_SYNC_TOKEN }}
+      RELEASE_ASSETS_TOKEN: ${{ github.token }}
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 
