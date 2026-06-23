@@ -1,0 +1,39 @@
+name: Sync release assets and deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      GITHUB_TOKEN: ${{ secrets.RELEASE_SYNC_TOKEN }}
+      RELEASE_SYNC_TOKEN: ${{ secrets.RELEASE_SYNC_TOKEN }}
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+    steps:
+      - name: Checkout VulcanToolsHub
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync public release assets
+        run: npm run sync:release-assets
+
+      - name: Test release sync
+        run: npm run test:releases
+
+      - name: Build site
+        run: npm run build
+
+      - name: Deploy to Netlify production
+        run: npx netlify deploy --prod --dir=dist --no-build --site "$NETLIFY_SITE_ID" --message "Sync release assets and deploy"

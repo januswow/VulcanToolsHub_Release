@@ -1,0 +1,43 @@
+name: Rewrite release repo main
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_rewrite:
+        description: 'Type REWRITE_PUBLIC_REPO_HISTORY to force rewrite januswow/VulcanToolsHub_Release main.'
+        required: true
+        type: string
+
+jobs:
+  rewrite-main:
+    if: ${{ inputs.confirm_rewrite == 'REWRITE_PUBLIC_REPO_HISTORY' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout release repo
+        uses: actions/checkout@v4
+        with:
+          repository: januswow/VulcanToolsHub_Release
+          token: ${{ secrets.RELEASE_SYNC_TOKEN }}
+          path: release-repo
+          fetch-depth: 0
+
+      - name: Rewrite main to README only
+        working-directory: release-repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan clean-main
+          git rm -rf .
+          cat > README.md <<'README'
+          # VulcanToolsHub Release Files
+
+          Public GitHub Release assets mirror for VulcanToolsHub downloads.
+
+          Current download files are published on the `vulcan-tools-latest` release.
+          README
+          git add README.md
+          git commit -m "Reset main branch to README only"
+          git branch -M main
+          git push --force origin main
