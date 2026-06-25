@@ -1,0 +1,119 @@
+{
+  "generatedAt": "2026-06-25T13:02:43.369Z",
+  "tools": [
+    {
+      "id": "spine-atlas-duplicator",
+      "name": "Spine Atlas Duplicator",
+      "category": "local",
+      "tags": [
+        "spine",
+        "atlas",
+        "file-management"
+      ],
+      "latestRelease": {
+        "id": "spine-atlas-duplicator",
+        "name": "Spine Atlas Duplicator",
+        "tags": [
+          "spine",
+          "atlas",
+          "file-management"
+        ],
+        "version": "1.0.1",
+        "tagName": "v1.0.1",
+        "publishedAt": "2026-06-24T13:53:05Z",
+        "downloads": {
+          "macos": {
+            "platform": "macos",
+            "name": "SpineAtlasDuplicator-1.0.1-mac-arm64.zip",
+            "url": "https://github.com/januswow/VulcanToolsHub_Release/releases/download/vulcan-tools-latest/SpineAtlasDuplicator-1.0.1-mac-arm64.zip",
+            "size": 95254945,
+            "digest": "sha256:464983b4276e2512381c35f62699185c0086fdd0f0a2a361364d9cce63d556be",
+            "contentType": "application/zip"
+          },
+          "windows-portable": {
+            "platform": "windows-portable",
+            "name": "SpineAtlasDuplicator-1.0.1-win-x64-portable.exe",
+            "url": "https://github.com/januswow/VulcanToolsHub_Release/releases/download/vulcan-tools-latest/SpineAtlasDuplicator-1.0.1-win-x64-portable.exe",
+            "size": 69731890,
+            "digest": "sha256:0eba94236254f76c2ae8ffb2159c2d4f818fc9654d606fd568e4312c2b203f29",
+            "contentType": "application/octet-stream"
+          }
+        }
+      }
+    },
+    {
+      "id": "file-sync-tool",
+      "name": "File Sync Tool",
+      "category": "local",
+      "tags": [
+        "spine",
+        "file-management"
+      ],
+      "latestRelease": {
+        "id": "file-sync-tool",
+        "name": "File Sync Tool",
+        "tags": [
+          "spine",
+          "file-management"
+        ],
+        "version": "0.2.1",
+        "tagName": "v0.2.1",
+        "publishedAt": "2026-06-25T10:25:21Z",
+        "downloads": {
+          "macos": {
+            "platform": "macos",
+            "name": "FileSyncTool-0.2.1-mac-arm64.zip",
+            "url": "https://github.com/januswow/VulcanToolsHub_Release/releases/download/vulcan-tools-latest/FileSyncTool-0.2.1-mac-arm64.zip",
+            "size": 99444446,
+            "digest": "sha256:cbce88a16fd53cee3a195fc9d3448c6cadc648566b6092fbca71dea36d04e985",
+            "contentType": "application/zip"
+          },
+          "windows-portable": {
+            "platform": "windows-portable",
+            "name": "FileSyncTool-0.2.1-win-x64-portable.exe",
+            "url": "https://github.com/januswow/VulcanToolsHub_Release/releases/download/vulcan-tools-latest/FileSyncTool-0.2.1-win-x64-portable.exe",
+            "size": 71123300,
+            "digest": "sha256:eda1bd1ef84ee62b10e08c556ec1ed25276a6244fa2ceffdb183a88dbb0ef5c4",
+            "contentType": "application/octet-stream"
+          }
+        }
+      }
+    },
+    {
+      "id": "spine-downgrade-tool",
+      "name": "Spine Downgrade Tool",
+      "category": "local",
+      "tags": [
+        "spine"
+      ],
+      "latestRelease": {
+        "id": "spine-downgrade-tool",
+        "name": "Spine Downgrade Tool",
+        "tags": [
+          "spine"
+        ],
+        "version": "0.1.2",
+        "tagName": "v0.1.2",
+        "publishedAt": "2026-06-24T14:41:35Z",
+        "downloads": {
+          "macos": {
+            "platform": "macos",
+            "name": "SpineDowngradeTool-0.1.2-mac-arm64.zip",
+            "url": "https://github.com/januswow/VulcanToolsHub_Release/releases/download/vulcan-tools-latest/SpineDowngradeTool-0.1.2-mac-arm64.zip",
+            "size": 95278213,
+            "digest": "sha256:a1aa22062be953b1d223e6a97b070c307b5e181dee94db676eb677e805193726",
+            "contentType": "application/zip"
+          },
+          "windows-portable": {
+            "platform": "windows-portable",
+            "name": "SpineDowngradeTool-0.1.2-win-x64-portable.exe",
+            "url": "https://github.com/januswow/VulcanToolsHub_Release/releases/download/vulcan-tools-latest/SpineDowngradeTool-0.1.2-win-x64-portable.exe",
+            "size": 69743201,
+            "digest": "sha256:f1b4d167617a197cab4cb8e8d1988f97cdd5831504d8fb8dce7c13cbff6372ca",
+            "contentType": "application/octet-stream"
+          }
+        }
+      }
+    }
+  ]
+}
