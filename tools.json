@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T16:13:10.613Z",
+  "generatedAt": "2026-06-26T02:42:17.458Z",
   "tools": [
     {
       "id": "spine-atlas-duplicator",
@@ -56,24 +56,24 @@
           "spine",
           "file-management"
         ],
-        "version": "0.2.3",
-        "tagName": "v0.2.3",
-        "publishedAt": "2026-06-25T15:37:00Z",
+        "version": "0.2.4",
+        "tagName": "v0.2.4",
+        "publishedAt": "2026-06-26T02:41:22Z",
         "downloads": {
           "macos": {
             "platform": "macos",
-            "name": "FileSyncTool-0.2.3-mac-arm64.zip",
-            "url": "https://github.com/januswow/VulcanToolsHub_Release/releases/download/vulcan-tools-latest/FileSyncTool-0.2.3-mac-arm64.zip",
-            "size": 99445018,
-            "digest": "sha256:6f9f7216c5047878b9673fcbfc01b9729bec272fc4204755b6c8aa461eaaab7e",
+            "name": "FileSyncTool-0.2.4-mac-arm64.zip",
+            "url": "https://github.com/januswow/VulcanToolsHub_Release/releases/download/vulcan-tools-latest/FileSyncTool-0.2.4-mac-arm64.zip",
+            "size": 100201844,
+            "digest": "sha256:b8848fe5c321c638ce6967a5983a8ed0c319e778bb26f8c6f7de90d0c62f009e",
             "contentType": "application/zip"
           },
           "windows-portable": {
             "platform": "windows-portable",
-            "name": "FileSyncTool-0.2.3-win-x64-portable.exe",
-            "url": "https://github.com/januswow/VulcanToolsHub_Release/releases/download/vulcan-tools-latest/FileSyncTool-0.2.3-win-x64-portable.exe",
-            "size": 71123117,
-            "digest": "sha256:7560659ff88114e2b8a07ee31c1a82a75a72f95b31d9b514584d3f2dbf637bc5",
+            "name": "FileSyncTool-0.2.4-win-x64-portable.exe",
+            "url": "https://github.com/januswow/VulcanToolsHub_Release/releases/download/vulcan-tools-latest/FileSyncTool-0.2.4-win-x64-portable.exe",
+            "size": 71579586,
+            "digest": "sha256:af2b781526b9fda0eed9ded6bf9a61ebafc2745354d123eef64e4dc6b15f54aa",
             "contentType": "application/octet-stream"
           }
         }
