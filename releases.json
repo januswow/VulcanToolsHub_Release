@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T02:42:17.458Z",
+  "generatedAt": "2026-07-21T03:38:30.636Z",
   "tools": {
     "spine-atlas-duplicator": {
       "id": "spine-atlas-duplicator",
@@ -38,25 +38,25 @@
         "spine",
         "file-management"
       ],
-      "version": "0.2.4",
-      "tagName": "v0.2.4",
-      "publishedAt": "2026-06-26T02:41:22Z",
+      "version": "0.2.5",
+      "tagName": "v0.2.5",
+      "publishedAt": "2026-07-21T03:20:21Z",
       "downloads": {
         "macos": {
           "platform": "macos",
-          "name": "FileSyncTool-0.2.4-mac-arm64.zip",
-          "url": "https://github.com/januswow/VulcanToolsHub_Release/releases/download/vulcan-tools-latest/FileSyncTool-0.2.4-mac-arm64.zip",
-          "size": 100201844,
-          "digest": "sha256:b8848fe5c321c638ce6967a5983a8ed0c319e778bb26f8c6f7de90d0c62f009e",
+          "name": "FileSyncTool-0.2.5-mac-arm64.zip",
+          "url": "https://github.com/januswow/VulcanToolsHub_Release/releases/download/vulcan-tools-latest/FileSyncTool-0.2.5-mac-arm64.zip",
+          "size": 100204364,
+          "digest": "sha256:a05a35951d2c51b351185d3db6351863f203fd3614f52fb09a90ede25771b2c2",
           "contentType": "application/zip"
         },
         "windows-portable": {
           "platform": "windows-portable",
-          "name": "FileSyncTool-0.2.4-win-x64-portable.exe",
-          "url": "https://github.com/januswow/VulcanToolsHub_Release/releases/download/vulcan-tools-latest/FileSyncTool-0.2.4-win-x64-portable.exe",
-          "size": 71579586,
-          "digest": "sha256:af2b781526b9fda0eed9ded6bf9a61ebafc2745354d123eef64e4dc6b15f54aa",
-          "contentType": "application/octet-stream"
+          "name": "FileSyncTool-0.2.5-win-x64-portable.exe",
+          "url": "https://github.com/januswow/VulcanToolsHub_Release/releases/download/vulcan-tools-latest/FileSyncTool-0.2.5-win-x64-portable.exe",
+          "size": 71580889,
+          "digest": "sha256:c244160dc67487dde1768308e65155db5c854758759a7637711a514a69fef545",
+          "contentType": "application/x-msdownload"
         }
       }
     },
