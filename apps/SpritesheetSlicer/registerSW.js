@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/VulcanToolsHub_Release/apps/SpritesheetSlicer/sw.js', { scope: '/VulcanToolsHub_Release/apps/SpritesheetSlicer/' })})}
